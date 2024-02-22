@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### TO DO ###
+
+Rohan:
+1. Make sure NAV bar is functional with menus acess and login page
+2. Build out intro get started page and make it look good
+3. Build Log In Page
+4. Build out get started page
+    Get started page must have questionnaire and save login info
