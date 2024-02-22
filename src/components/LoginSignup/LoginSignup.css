@@ -1,0 +1,112 @@
+/* LoginSignup.css */
+img {
+    width: 30px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 200px;
+    background: #fcfcf3; /* Light cream color from navbar */
+    align-items: center;
+    padding-bottom: 30px;
+    width: 600px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 30px; 
+}
+
+.text {
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.underline {
+    width: 61px;
+    height: 6px;
+    background: #e7d287; /* Gold color */
+    border-radius: 9px;
+}
+
+.inputs {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    border-radius: 6px;
+    border: 1px solid #e7d287; /* Optional: added border to match theme */
+}
+
+.input img {
+    margin: 0px 30px;
+}
+
+.input input {
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000; /* Black text color */
+    font-size: 19px;
+}
+
+.forgot-password {
+    padding-left: 62px;
+    margin-top: 27px;
+    color: #000; /* Black text color */
+    font-size: 18px;
+}
+
+.forgot-password span{
+    color: #e7d287; /* Gold color */
+    cursor: pointer;
+}
+
+.submit-container{
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: #000; /* Black text color */
+    background: #e7d287; /* Gold color */
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.notSelected{
+    background: white;
+    color: grey;
+}
+
+/* Adding hover effects for buttons */
+.submit:hover {
+    background-color: #ccac00; /* Darker gold on hover */
+    transition: background-color 0.3s ease;
+}
