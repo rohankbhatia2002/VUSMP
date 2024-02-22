@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link, UNSAFE_useScrollRestoration } from 'react-router-dom'
 import toolbarImage from '../images/VUSMP_logo.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,7 +20,18 @@ function Navbar() {
         }
     }
 
-    window.addEventListener('resize', showButton)
+    useEffect(() => {
+        window.addEventListener('resize', showButton)
+
+        // Cleanup the component
+        return () => {
+            window.removeEventListener('resize', showButton)
+        }
+    }, [])
+
+    const redirectToMenus = () => {
+        window.open('http://vu.edu/menus', '_blank').focus();
+    }
 
 
     return (
@@ -32,19 +43,17 @@ function Navbar() {
                 <div className='menu-icon' onClick={() => setClick(!click)}>
                     <FontAwesomeIcon icon={click ? faTimes : faBars} />
                 </div>
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li className='nav-item'>
-                    <a href="http://vu.edu/menus" className="nav-links btn btn--outline" onClick={closeMenu} target="_blank" rel="noopener noreferrer">
-                        Menus
-                    </a>
-                    </li>
-                </ul>
                 <button 
-                    buttonStyle="btn--primary" 
-                    buttonSize="btn-m" 
+                    className="btn btn--primary btn-m" 
+                    onClick={redirectToMenus}
+                >
+                    View Menus
+                </button>
+                <button 
+                    className="btn btn--primary btn-m" 
                     onClick={() => console.log('Button clicked')}
                 >
-                    Click Me
+                    Log In
                 </button>
             </div>
         </nav>
