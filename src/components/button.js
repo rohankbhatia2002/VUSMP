@@ -22,6 +22,7 @@ const Button = ({ children, type, onClick, buttonStyle, buttonSize }) => {
       {children}
     </button>
   );
+
 };
 
 export default Button;
