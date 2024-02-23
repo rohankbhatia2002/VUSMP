@@ -1,0 +1,42 @@
+.appContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    background-color: #f0f0f0; /* Optional: sets a light background color */
+  }
+  
+  .card {
+    position: absolute;
+    max-width: 150px;
+    max-height: 700px;
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+    will-change: transform, opacity;
+  }
+  
+  .cardFace {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gold; /* Gold outline */
+    border-radius: 10px; /* Optional: rounds the corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Blackish shadow */
+    background-color: white; /* Sets a background color for the card face */
+    color: black; /* Sets the text color for the card face */
+  }
+
+
+  
+  .front,
+  .back {
+    background-size: cover;
+  }
+  

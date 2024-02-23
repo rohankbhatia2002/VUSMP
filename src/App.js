@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import Navbar from './components/navbar';
+import Navbar from './Components/navbar';
+import LoginSignup from './pages/Login/LoginSignup';
+import HeroSection from './pages/Hero/HeroSection'; 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -10,7 +11,8 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' exact />
+        <Route path='/' element = {<HeroSection/>} />
+        <Route path="/login" element={<LoginSignup />} />
       </Routes>
     </Router>
     </>
